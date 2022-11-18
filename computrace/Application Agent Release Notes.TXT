@@ -1,0 +1,177 @@
+==================================================================================
+Computrace Agent Build #879 --- Change History --- Release Date Sep 15, 2008
+==================================================================================
+Agent:
+
+• Fix for resume from hibernation for Vista.
+• Fix to use URL as IP address if previous http connection attempt failed.
+• Fix to prevent Windows File Protection popup.
+• Set a timeout to terminate a session if the agent is unable to establish a connection.
+
+==================================================================================
+Computrace Agent Build #857 --- Change History --- Release Date June 13, 2007
+==================================================================================
+Agent:
+• Added BitLocker control panel applet to intercept incompatible BIOS/SW persitent modules, and prompt use for another course of action.
+
+CTMWEB:
+• Added extra support for running inventory dll, when antivirus picks it up
+
+==================================================================================
+Computrace Agent Build #847 --- Change History --- Release Date November 30, 2006
+==================================================================================
+MSI:
+• All Vista 32 and 64 bit client editions are now supported
+
+Agent:
+• Fixes modem call failure when no internet connection available
+
+==================================================================================
+Computrace Agent Build #826 --- Change History --- Release Date April 4, 2006
+==================================================================================
+CTMWEB:
+• Fixes "Incorrect Parameter" error when running Ctmweb.exe on a CD
+• Fixes "Last call failed" message being displayed when running a test call
+• Adds local url to "allow list" in IE
+• Removed Install/Remove and Change Password functionalities from Ctmweb.exe 
+• Adds Bypass of McAfee firewall
+• Restores proper page closing
+
+MSI:
+• Change MSI installation logic to allow MSI to able to do upgrade
+
+Agent:
+• Fix to work via slow wireless connections with small transmission unit size of packets
+• Allow agent file to be readonly
+
+==================================================================================
+Computrace Agent Build #817 --- Change History --- Release Date January 30, 2006
+==================================================================================
+• Implemented enhanced agent call shut down if windows is shut down during call.
+• Implemented minor features for enhanced OEM BIOS support.
+• Added upgrade ability to the Computrace msi installer.
+• REmoved the ability to install and remove the agent using CTMWeb.
+• Fixed a few small bugs in CTMWeb.
+
+==================================================================================
+Computrace Agent Build #814 --- Change History --- Release Date August 8, 2005
+==================================================================================
+• Added compatibility for MS Anti-spyware.
+• Enhanced personal firewall bypass capabilities.
+• Resolved issue with mulitple instances of rpcnet causing communications problems.
+• Simplified the agent management tool CTMWeb.
+• Resolved issue with Dell Diagnostics hanging.
+
+==================================================================================
+Computrace Agent Build #804 --- Change History --- Release Date March 3, 2005
+==================================================================================
+• Resolved issue to effectively bypass personal firewalls.
+
+==================================================================================
+Computrace Agent Build #803 --- Change History --- Release Date November 9, 2004
+==================================================================================
+• Added compatibility for Zenworks and Rescue and Recovery. 
+• Implemented new installation method using MSI installer.
+
+==================================================================================
+Computrace Agent Build #802 --- Change History --- Release Date October 10, 2004
+==================================================================================
+• Computrace Agent Build 802 is the first agent to take advantage of Absolute's Persistence Technology.
+• Agent is 'self-healing' - If the agent is removed (rpcnet.exe) or agent service is disabled the agent is able self heal without any user interaction. 
+• Increased survivability - Absolute's Persistence Technology allows the agent to be able to survive an Operating system reinstall, hard drive reformat and in some scenarios drive reimaging on Toshiba laptops, Dell computers and IBM T41/T42 ThinkPads.
+• New architecture includes a service level Application Agent and a low level Persistence Module.
+• Application Agent - resides in the Operating System and makes regularly scheduled call to the monitoring server. 
+• Persistence Module - low level agent residing in the partition gap or BIOS. The Persistence module's function it to ensure the Appilcation agent is active and able to make calls to the monitoring center. Please refer to the Persistence Module Release Notes.txt for more details.
+• Enhanced ESN logic - inventprv.dll is able to detect a number of hardware assets (make, model, serial number, etc) and store these data points along with the ESN. If agent is removed this inventory record will be referenced during next activation to reassign the machine it's correct ESN.	
+
+==================================================================================
+Computrace Agent Build #789 --- Change History --- Release Date April 20, 2004
+==================================================================================
+• Computrace Agent Build 789 incorporates an updated EULA (End-User License Agreement), 
+Terms and Conditions of Service, and Recovery Guarantee Terms and Conditions for ComputraceComplete.
+
+==================================================================================
+Computrace Agent Build #788 --- Change History --- Release Date March 11, 2004
+==================================================================================
+
+• Fixed an issue under Windows 2000 SP4 where an Agent call under Power User access rights caused an RPCNET error. 
+• Fixed an issue where an installion to a computer with two or more partitions would fail if the first partition was bigger then 4GB.
+• Corrected an issue with the Agent that caused the Ositech DPI Assistant window to pop up.
+• Resolved an issue where no IP or TAPI calls can be made if the user is logged in as a Guest user.         
+• Resolved an issue which prevented the Agent from co-existing with Novell Zenworks. The Computrace Agent and Zenworks are now fully compatible.               
+• Corrected an issue that allowed the International Agent to dial a local telephone number. The International Agent no longer has a default telephone number.
+
+==================================================================================
+Computrace Agent Build #782 --- Change History --- Release Date July 10, 2003
+==================================================================================
+
+• Corrected an issue where a hands-free (silent) upgrade of the Computrace Agent on a PC equipped with IBM Rapid Restore running Windows 2000, NT, or XP may cause Computrace dialog window to open: "IBM Rapid Restore PC Manager may conflict with Computrace. Proceed? <OK> <Cancel>" 
+• Fixed an interaction between the Computrace Agent and certain imaging software where the Agent could not be upgraded, installed, or managed on a hard drive restored from an image with the Agent installed.
+• Enhanced Boot-from-CD support for Dell Latitude C610 models.
+• Changed the functionality of the predial-string. The Computrace Agent now waits for a dial tone after the predial-string.
+• Fixed an issue with various Tablet PC running Windows XP for Tablets, which prevented the Computrace Agent Manager from executing. 
+• Resolved an issue which prevented a computer running Windows 2000, XP, or NT from shutting down when a second instance of RPCNET was running.
+
+==================================================================================
+Computrace Agent Build #780 --- Change History --- Release Date August 26, 2002
+==================================================================================
+
+• Fixed an issue where Computrace caused a boot delay on Toshiba Portege 3480/3490CT.
+• Implemented an enhancement by which the Computrace Agent will attempt a connection under the currently-logged in user authentication
+• Corrected an issue where remote upgrading of the Computrace Agent under Windows 9x prior to login with Norton Antivirus installed could cause a NAV popup warning
+• Corrected an issue where Computrace would not install under Windows 2000 if drive had two partitions configured as 1 non-dos primary and 1 NTFS partition
+• Resolved an issue with IBM T23 with Rapid Restore (ver 2), where upon reboot on Windows 9x/Me, the PC could hang
+• Fixed an issue which could cause a PC to hang if test IP call was attempted over dial-up IP connection.
+
+==================================================================================
+Computrace Agent Build #774 --- Change History --- Release Date March 4, 2002
+==================================================================================
+
+• Corrected an issue with Toshiba Protege machines, where laptop would not boot when no CDROM drive attached to machine.
+• Fixed an issue with 'Simulate Boot from Floppy' function for Toshiba Protege when used on a docking station. Computrace now correctly attempts to boot from attached floppy drive.
+• Corrected an issue with remote upgrade of Computrace on machines running Windows Me and Norton Antivirus, where Norton Antivirus issued an alert. 
+• Fixed issue with Toshiba Satellite which would not boot if Simulate Boot from Floppy function is in use and the CDROM drive contained a non-data CD (i.e. audio CD) in the CDROM drive.
+• Corrected an issue where Computrace may not log result of installation or upgrade attempt to CTMERR.LOG.
+
+
+==================================================================================
+Computrace Agent Build #771 --- Change History --- Release Date January 4, 2002
+===============================================================================
+
+• Installation of the Computrace Agent when IBM Rapid Restore is installed causes a "bluescreen". This problem is corrected -  IBM Rapid Restore version 2.02 and the Computrace Agent are now compatible. 
+• Fixed an issue in CTMDOS where proxy information was always set even if the information was not specified at installation. 
+• Corrected a problem that caused IP calls to fail when the PC was connected to an ISP through Windows Dial Up Networking. 
+• Fixed an issue in CTMDOS where the "-Xm" command line option did not work.  
+• Added support for remotely setting the boot order on Toshiba PCs.
+• Added support for "Simulate Boot from CD" for Toshiba PCs. 
+
+
+==================================================================================
+Computrace Agent Build #766 --- Change History --- Release Date November 14, 2001
+==================================================================================
+
+• Added compatibility with Go Back v3.0. Please consult readme.txt for additional information on this product and it's compatibility with the Computrace Agent.
+• Updated the End User License Agreement.
+• Windows Me rescue disk causes boot failure when the Computrace Agent is installed. This issue has been corrected.
+• Significantly reduced the boot delay on Dell Latitude PCs.
+• Corrected a problem that would not allow a Dell Latitude CPx to boot off a bootable CD with the Computrace Agent installed.
+• Corrected a problem that would not allow the Computrace Agent to be installed on a Windows NT dynamic partition.
+• Confirmed compatibility with Windows XP.
+
+
+==============================================================================
+Computrace Agent Build #762 --- Change History --- Release Date March 12, 2001
+==============================================================================
+
+• In Windows NT and 2000 versions of the Agent (CTMNT), the RPCNET service would stop and would not restart if the PC crashed. This issue has been corrected.
+• Corrected a problem by which the local IP address found by Agent sometimes fails or is not correct.
+• Setting a 'Next Call" date of greater than 90 days caused the Agent to call back immediately. This issue has been corrected.
+• Corrected an issue by which you could not install Windows NT 4.0 if the Computrace Agent was installed.
+• Added new pre-dial string "PBX0" for the International build of the Computrace Agent.
+• Enhancement of the Agent to ensure that when managing an International version of the Agent with either a Standard or International version, async settings cannot be modified, but existing setting of async disable flag is preserved.
+• Command line parameters were not being passed between CTM.EXE and CTMNT.EXE when one executes the other. This issue has been corrected.
+• Choosing a Proxy Password longer than 13 characters in the "ProxyPassword" command line parameter will cause CTM.EXE to crash. This issue has been corrected.
+• If the Computrace Agent is removed with Norton Anti-Virus 4.0 installed, the PC will hang. This issue has been corrected.
+• Corrected a problem that caused a "bluescreen" after installing the Computrace Agent on a Sony Vio PictureBook running the Windows Me operating system.
+• Corrected a problem by which the modem on a Sony Vio PC would stop working after the Computrace Agent made a callout attempt.
+• The custom pre-dial string is lost after choosing "PBX9" predial option. This issue has been corrected.
